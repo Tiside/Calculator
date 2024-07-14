@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="center">
+        <div class="calculator">
+            <div class="result">
+                <div class="theme" onclick="changeTheme()">
+                    <i class='bx bxs-sun'></i>
+                </div>
+                <div class="numbers" id="lastnumbers">
+                   0
+                </div>
+                <div class="equals" id="result">
+                    0
+                </div>
+            </div>
+            <div class="buttons">
+                <div class="buttons-container">
+
+                    <div class="button-grid">
+                        <div class="fLine">
+                            <button class="calc-man" id="clear" onclick="operators('C')">C</button>
+                            <button class="calc-man" id="divide" onclick="operators('÷')">÷</button>
+                            <button class="calc-man" id="increase" onclick="operators('x')">x</button>
+                            
+                        </div>
+                        <div class="sLine">
+                            <button onclick="numbers(7)">7</button>
+                            <button onclick="numbers(8)">8</button>
+                            <button onclick="numbers(9)">9</button>
+                        </div>
+                        <div class="tLine">
+                            <button onclick="numbers(4)">4</button>
+                            <button onclick="numbers(5)">5</button>
+                            <button onclick="numbers(6)">6</button>
+                        </div>
+                        <div class="foLine">
+                            <button  onclick="numbers(1)">1</button>
+                            <button onclick="numbers(2)">2</button>
+                            <button onclick="numbers(3)">3</button>
+                            
+                        </div>
+                        
+                        <div class="ffLine">
+                            <button onclick="operators('%')">%</button>
+                            <button onclick="numbers(0)">0</button>
+                            <button onclick="operators('.')">.</button>
+                            
+                        </div>
+                    </div>
+                    <div class="button-column">
+                        <button class="calc-man" onclick="operators('erase')"><i class='bx bxs-eraser'></i></button>
+                        <button class="calc-man" onclick="operators('-')">-</button>
+                        <button class="calc-man" onclick="operators('+')">+</button>
+                        <button class="calc-man" onclick="operators('=')">=</button>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+
+<script src="script.js"></script>
+</body>
+</html>
